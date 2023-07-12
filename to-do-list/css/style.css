@@ -1,0 +1,118 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+#todo-list {
+  width: 800px;
+  height: 62px;
+  padding-bottom: 50px;
+  margin-right: 16px;
+  padding: 0;
+}
+
+#todo-form {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+#todo-input {
+  border-radius: 20px;
+  width: 800px;
+  height: 62px;
+  border: #949494 1px solid;
+  padding: 5px;
+  margin-top: 86px;
+  padding-left: 10px;
+  position: relative;
+  font-size: 25px;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid transparent;
+  background-color: #F0F5F8;
+  border-radius: 20px;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.delete {
+  background-color: transparent;
+  color: #FF3D00;
+  margin-right: 16px;
+  background: url("../pic/Vector.svg") no-repeat top;
+  padding-top: 29px;
+  font-size: 18px;
+}
+
+.save {
+  width: 62px;
+  height: 62px;
+  border-radius: 10px;
+  border: transparent;
+  background: #00C45A url("../pic/checkbox-outline.svg") no-repeat top;
+  color: #FFFFFF;
+  padding-top: 25px;
+  font-size: 18px;
+}
+
+button {
+  border-radius: 20px;
+  border: transparent;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.todo-imgSave {
+  align-self: flex-end;
+  margin-right: 125px;
+  margin-top: 17px;
+}
+
+#btn {
+  background-color: #FF0000;
+  min-width: 257px;
+  height: 73px;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+.btnSpan {
+  display: flex;
+  gap: 33px;
+}
+
+.textSpan {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#cleanItems {
+  margin: 0;
+  background-color: transparent;
+  color: #949494;
+}
+
+.clearArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+}
+
+.form-list-wrapper {
+  flex-grow: 1;
+  overflow: auto;
+}/*# sourceMappingURL=style.css.map */

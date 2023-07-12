@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./pic/logo.svg" alt="logo foxminded" class="logo" />
+      <div class="form-list-wrapper">
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="Add your task" />
+          <button type="submit" id="btn">Edit</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div class="clearArea">
+        <img src="./pic/trash.svg" alt="trash icon" id="cleanItemsImg" />
+        <button id="cleanItems">CLEAN ITEMS</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
