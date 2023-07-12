@@ -1,0 +1,141 @@
+@import 'variables';
+@import 'font';
+@import "mixins.scss";
+
+body {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'FFNort-Regular', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+h4 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  font-family: 'FFNort-Regular', sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: 'FFNort-Bold', sans-serif;
+  letter-spacing: 2px;
+  font-size: 26px;
+}
+
+
+p {
+  margin-bottom: 20px;
+  color: $dark-blue;
+}
+
+.menu {
+  padding: 80px 0;
+}
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.line {
+  width: 80px;
+  height: 4px;
+  background: $bronze;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-bottom: 64px;
+}
+.content {
+  width: 98vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  gap: 48px;
+  justify-content: center;
+  @include for-dekstop {
+    width: 95vh;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  display: grid;
+  gap: 16px 32px;
+  max-width: 400px;
+  @include for-tablet {
+    grid-template-columns: 220px 335px;
+    gap: 0 10px;
+    max-width: 653px;
+    position: relative;
+  }
+}
+
+.card-title {
+  font-size: 18px;
+  margin-left: 7px;
+}
+
+.food-img {
+  object-fit: cover;
+  height: 200px;
+  border: 4px solid $bronze;
+  border-radius: 5px;
+  @include for-tablet {
+   height: 175px;
+  }
+  @include for-dekstop {
+    height: 150px;
+  }
+}
+
+.item-info {
+  position: absolute;
+  top: 25%;
+  left: 42%;
+  border-top: 1px $dark-blue dashed;
+}
+
+.price {
+  color: $bronze;
+}
+
+.btnContainer {
+  display: flex;
+  margin-bottom: 38px;
+  justify-content: center;
+}
+
+.btns {
+  background: transparent;
+  border-color: $bronze;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0 8px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 6px 12px;
+  color: $bronze;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+    background: $bronze;
+  }
+}
