@@ -1,0 +1,168 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --text-color: #000000;
+  --background-color: #ffffff;
+  --icon-image: url(../pic/icon_light.png);
+  --icon-position: left;
+  --arrow-image: url(../pic/arrow.png);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+body.dark_theme {
+  --text-color: #ffffff;
+  --background-color: #000000;
+  --icon-image: url(../pic/icon_dark.png);
+  --arrow-image: url(../pic/arrow_white.png);
+  --icon-position: right;
+}
+
+.container {
+  max-width: 1600px;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  @include for-smaller-screens {
+    margin: 0;
+  }
+}
+.selection {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  display: flex;
+  justify-content: space-between;
+  @include for-smaller-screens {
+    flex-direction: column;
+    gap: 13px;
+  }
+  &__title {
+    font-size: 40px;
+    @include for-smaller-screens {
+      font-size: 30px;
+    }
+  }
+  &__input {
+    background: url(../pic/search.png) no-repeat right;
+    min-width: 376px;
+    min-height: 44px;
+    border-radius: 8px;
+    border: 1px solid $selection_color;
+    padding-left: 10px;
+    font-size: 17px;
+    color: var(--text-color);
+    @include for-smaller-screens {
+      min-width: 346px;
+    }
+  }
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+    &-btn {
+      background: var(--arrow-image) no-repeat 90% center;
+      min-width: 151px;
+      min-height: 44px;
+      border-radius: 10px;
+      border: 1px solid #b8b6bf;
+      color: var(--text-color);
+    }
+    &-content {
+      display: none;
+      position: absolute;
+      min-width: 144px;
+      z-index: 1;
+      border: 1px solid $selection_color;
+      border-radius: 10px;
+    }
+  }
+  &__switchOnClick {
+    background: $background_of_switchBtn var(--icon-image) var(--icon-position) no-repeat;
+    min-width: 70px;
+    max-height: 32px;
+    border-radius: 25px;
+    border: transparent;
+    &:hover {
+      border: 1px solid $for_dark_theme;
+    }
+  }
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main {
+  display: flex;
+  gap: 77px;
+  flex-wrap: wrap;
+  @include for-smaller-screens {
+    justify-content: center;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    max-width: 287px;
+    border: 1px solid $selection_color;
+    border-radius: 10px;
+    margin-top: 45px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    @include for-smaller-screens {
+      max-width: 138px;
+      flex-wrap: nowrap;
+    }
+    &-name {
+      @include for-smaller-screens {
+        font-size: 20px;
+      }
+    }
+    &-population {
+      @include for-smaller-screens {
+        font-size: 14px;
+      }
+    }
+    &-region {
+      @include for-smaller-screens {
+        font-size: 14px;
+      }
+    }
+    &-capital {
+      @include for-smaller-screens {
+        font-size: 14px;
+      }
+    }
+    &-text {
+      padding-left: 4px;
+    }
+  }
+  &__img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.regions {
+  min-width: 150px;
+  background-color: transparent;
+  border: transparent;
+  display: block;
+  color: var(--text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.asia {
+  border-bottom: 1px solid $selection_color;
+}
+.europe {
+  border-bottom: 1px solid $selection_color;
+}
