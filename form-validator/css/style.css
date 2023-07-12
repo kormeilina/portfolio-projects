@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #527e90;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  color: white;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  margin: 0;
+  background-color: #d64100;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .title {
+    border-radius: 0;
+    height: 110px;
+  }
+}
+
+.container {
+  margin-top: 1%;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .wrapper {
+    border-radius: 0;
+  }
+}
+
+.general-form {
+  background-color: #fcfcfc;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer {
+  padding: 20px 0px 20px 0px;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.label-name {
+  color: #d64100;
+  font-weight: bold;
+}
+
+.input-form {
+  display: block;
+  text-align: center;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .input-form {
+    text-align: left;
+  }
+}
+
+.horizontal-form {
+  display: flex;
+  gap: 100px;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .horizontal-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.input-group {
+  display: flex;
+  font-size: 13px;
+}
+
+.input-center {
+  width: 446px;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .input-center {
+    width: 100%;
+  }
+}
+
+.right-section {
+  margin-left: 38px;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .right-section {
+    margin: 0;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section {
+  position: relative;
+  margin-left: 41px;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .left-section {
+    margin: 0;
+  }
+}
+
+.left-section-age {
+  margin-left: -85px;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .left-section-age {
+    margin: 0;
+  }
+}
+
+.form-group-bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form {
+  color: #000000;
+  border-radius: 4px;
+  border: 1px solid;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .input-form {
+    width: 100%;
+  }
+}
+
+.input-form-upload {
+  color: #a3a3a3;
+  display: flex;
+}
+
+.input-form-age {
+  color: #000000;
+  border: 1px solid #e2e2e2;
+  width: 168px;
+}
+
+.range-text {
+  position: absolute;
+  left: 45%;
+  background-color: #d64100;
+  color: white;
+  border: 0px solid;
+  border-radius: 5px;
+  padding: 2px;
+  width: 30px;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .range-text {
+    left: 35%;
+  }
+}
+
+.input-form-income {
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+}
+
+.btn {
+  background-color: #d64100;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 6px;
+  color: white;
+  width: 150px;
+  height: 35px;
+  font-weight: bold;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .btn {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-left: 22px;
+    border: 1px solid #d64100;
+    background-color: white;
+    color: #d64100;
+  }
+}
+
+::-webkit-file-upload-button {
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+  width: 120px;
+  background-color: white;
+}
+
+.input-form-checkboxes {
+  border: 1px solid;
+  background-color: white;
+}
+
+.label-form-checkboxes {
+  color: #000000;
+}
+
+.checkboxes {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .checkboxes {
+    width: 10%;
+  }
+}
+
+.bio-text-area {
+  width: 90%;
+  border: 2px solid #e2e2e2;
+  resize: none;
+}
+
+.hidden-input {
+  opacity: 0;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.done {
+  border: 2px solid green;
+}
+
+.password-match-error {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.logo {
+  position: absolute;
+  top: 0%;
+  right: 25%;
+  width: 150px;
+}
+@media (min-width: 350px) and (max-width: 768px) {
+  .logo {
+    top: 8%;
+  }
+}/*# sourceMappingURL=style.css.map */

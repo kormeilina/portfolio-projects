@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1 class="title">Create Account</h1>
+        <img src="./pic/logo.png" alt="logo foxminded" class="logo" />
+        <div class="general-form">
+          <div class="horizontal-form">
+            <div class="form-group left">
+              <label class="label-name" for="fname">First Name*</label>
+              <input
+                class="input-form"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="enter your first name"
+              />
+            </div>
+            <div class="form-group right">
+              <label class="label-name" for="lname">Last Name</label>
+              <input
+                class="input-form"
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="enter your last name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group center">
+            <label class="label-name" for="email">Email*</label>
+            <input
+              class="input-form input-center"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="enter your email"
+            />
+          </div>
+
+          <div class="horizontal-form">
+            <div class="form-group left">
+              <label class="label-name" for="pass">Password*</label>
+              <input
+                class="input-form"
+                type="password"
+                id="pass"
+                name="password"
+                placeholder="enter your password"
+              />
+            </div>
+            <div class="form-group right">
+              <label class="label-name" for="lname">Confirm password</label>
+              <input
+                class="input-form"
+                type="password"
+                id="confirmpassword"
+                name="lname"
+                placeholder="enter your password again"
+              />
+              <p class="password-match-error" id="password-match-error"></p>
+            </div>
+          </div>
+
+          <div class="horizontal-form">
+            <div class="form-group left">
+              <label class="label-name" id="gender">Gender</label>
+              <div class="input-group">
+                <input
+                  class="input-form checkboxes"
+                  type="radio"
+                  id="male"
+                  name="male"
+                />
+                <label class="label-form-checkboxes" for="male">Male</label>
+                <input
+                  class="input-form checkboxes"
+                  type="radio"
+                  id="female"
+                  name="female"
+                />
+                <label class="label-form-checkboxes" for="female">Female</label>
+              </div>
+            </div>
+            <div class="form-group right-section">
+              <label class="label-name" id="hobbies">Hobbies</label>
+              <div class="input-group">
+                <input
+                  class="input-form checkboxes"
+                  type="radio"
+                  id="music"
+                  name="music"
+                />
+                <label class="label-form-checkboxes" for="music">Music</label>
+                <input
+                  class="input-form checkboxes"
+                  type="radio"
+                  id="sports"
+                  name="sports"
+                />
+                <label class="label-form-checkboxes" for="sports">Sports</label>
+                <input
+                  class="input-form checkboxes"
+                  type="radio"
+                  id="travel"
+                  name="travel"
+                />
+                <label class="label-form-checkboxes" for="travel">Travel</label>
+                <input
+                  class="input-form checkboxes"
+                  type="radio"
+                  id="movies"
+                  name="movies"
+                />
+                <label class="label-form-checkboxes" for="movies">Movies</label>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-form">
+            <div class="form-group left">
+              <label class="label-name" id="income">Source of Income</label>
+              <select class="input-form-income" name="income" id="level-income">
+                <option placeholder="A">Employed</option>
+                <option placeholder="B">Self-Employed</option>
+                <option placeholder="C">Unemployed</option>
+              </select>
+            </div>
+            <div class="form-group left-section">
+              <label class="label-name" id="income-range">Income</label>
+              <form oninput="x.value=parseInt(a.value)+parseInt(b.value) + 'K'">
+                <input min="0" max="19" type="range" id="a" value="1" />
+                <input class="hidden-input" type="number" id="b" value="1" />
+                <output class="range-text" name="x" for="a b">20K</output>
+              </form>
+            </div>
+          </div>
+
+          <div class="horizontal-form">
+            <div class="form-group left upload-wrapper">
+              <label class="label-name" id="file-load"
+                >Upload Profile Picture</label
+              >
+              <input
+                class="input-form-upload"
+                type="file"
+                id="choose-file"
+                size="80"
+              />
+            </div>
+            <div class="form-group left-section-age">
+              <label class="label-name" id="age">Age</label>
+              <input
+                class="input-form input-form-age"
+                type="number"
+                min="18"
+                max="80"
+                placeholder="18"
+              />
+            </div>
+          </div>
+
+          <div class="form-group-bio">
+            <label class="label-name" id="bio">Bio</label>
+            <textarea
+              class="bio-text-area"
+              id="bio-text"
+              cols="50"
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="submit" class="btn">Create</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

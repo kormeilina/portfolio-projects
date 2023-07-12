@@ -1,0 +1,238 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $background-color;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  color: $wrapper-and-checboxes-color;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+  margin: 0;
+  background-color: $title-and-btn-color;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  width: 100%;
+  @include for-smaller-screens {
+    border-radius: 0;
+    height: 110px;
+  }
+}
+
+.container {
+  margin-top: 1%;
+  @include for-smaller-screens {
+    margin: 0;
+  }
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include for-smaller-screens {
+    border-radius: 0;
+  }
+}
+
+.general-form {
+  background-color: $general-form-color;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer {
+  padding: 20px 0px 20px 0px;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.label-name {
+  color: $title-and-btn-color;
+  font-weight: bold;
+}
+
+.input-form {
+  display: block;
+  text-align: center;
+  @include for-smaller-screens {
+    text-align: left;
+  }
+}
+
+.horizontal-form {
+  display: flex;
+  gap: 100px;
+  @include for-smaller-screens {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.input-group {
+  display: flex;
+  font-size: 13px;
+}
+
+.input-center {
+  width: 446px;
+  @include for-smaller-screens {
+    width: 100%;
+  }
+}
+
+.right-section {
+  margin-left: 38px;
+  @include for-smaller-screens {
+    margin: 0;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-section {
+  position: relative;
+  margin-left: 41px;
+  @include for-smaller-screens {
+    margin: 0;
+  }
+}
+
+.left-section-age {
+  margin-left: -85px;
+  @include for-smaller-screens {
+    margin: 0;
+  }
+}
+
+.form-group-bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form {
+  color: $input-age;
+  border-radius: 4px;
+  border: 1px solid;
+  @include for-smaller-screens {
+    width: 100%;
+  }
+}
+
+.input-form-upload {
+  color: $upload-color;
+  display: flex;
+}
+
+.input-form-age {
+  color: $input-age;
+  border: 1px solid $input-bio-uploadbtn-color;
+  width: 168px;
+}
+
+.range-text {
+  position: absolute;
+  left: 45%;
+  background-color: $title-and-btn-color;
+  color: $income-btn;
+  border: 0px solid;
+  border-radius: 5px;
+  padding: 2px;
+  width: 30px;
+  @include for-smaller-screens {
+    left: 35%;
+  }
+}
+
+.input-form-income {
+  border-radius: 4px;
+  border: 1px solid $input-bio-uploadbtn-color;
+}
+
+.btn {
+  background-color: $title-and-btn-color;
+  border-radius: 5px;
+  border: 1px solid $wrapper-and-checboxes-color;
+  padding: 6px;
+  color: $income-btn;
+  width: 150px;
+  height: 35px;
+  font-weight: bold;
+  @include for-smaller-screens {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-left: 22px;
+    border: 1px solid $title-and-btn-color;
+    background-color: $income-btn;
+    color: $title-and-btn-color;
+  }
+}
+
+::-webkit-file-upload-button {
+  border-radius: 4px;
+  border: 1px solid $input-bio-uploadbtn-color;
+  width: 120px;
+  background-color: $income-btn;
+}
+
+.input-form-checkboxes {
+  border: 1px solid;
+  background-color: white;
+}
+
+.label-form-checkboxes {
+  color: $input-age;
+}
+
+.checkboxes {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  @include for-smaller-screens {
+    width: 10%;
+  }
+}
+
+.bio-text-area {
+  width: 90%;
+  border: 2px solid $input-bio-uploadbtn-color;
+  resize: none;
+}
+
+.hidden-input {
+  opacity: 0;
+}
+
+.error {
+  border: 2px solid red;
+}
+.done {
+  border: 2px solid green;
+}
+.password-match-error {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+  font-weight: bolder;
+}
+.logo {
+  position: absolute;
+  top: 0%;
+  right: 25%;
+  width: 150px;
+  @include for-smaller-screens {
+    top: 8%;
+  }
+}
