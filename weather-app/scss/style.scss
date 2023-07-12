@@ -1,0 +1,88 @@
+@import "variables.scss";
+* {
+  font-family: "Roboto", sans-serif;
+}
+form {
+  display: flex;
+    flex-direction: column;
+}
+h2 {
+  font-weight: 400;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__input {
+    box-sizing: border-box;
+    width: 327px;
+    height: 49px;
+    border: 1px solid $input-border;
+    border-radius: 10px;
+    padding-left: 14px;
+    &-btn {
+      display: none;
+    }
+  }
+&__info {
+  color: $selected;
+}
+  &__input-block {
+    display: none;
+    gap: 30px;
+    width: 436px;
+    height: 110px;
+    background: $widget_and_logo;
+    border-radius: 10px;
+    justify-content: center;
+    color: $widget_and_logo_text;
+    align-items: center;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    &-logo {
+      width: 100px;
+    }
+  }
+  &__week {
+    &-day-weather {
+      font-weight: bold;
+    }
+    &-night-weather {
+      font-weight: bold;
+    }
+  }
+  &__weekly {
+    display: flex;
+    gap: 74px;
+    align-items: center;
+    border-bottom: 2px $line-horizontal solid;
+    width: max-content;
+    &-img {
+      flex-shrink: 0;
+      max-width: 80px;
+      max-height: 80px;
+    }
+    &-weather {
+      display: flex;
+      flex-direction: column;
+    }
+    &-wrapper {
+      display: none;
+      flex-direction: column;
+      border-top: 2px #DDDDDD solid;
+      margin-top: 27px;
+      max-width: max-content;
+
+    }
+  }
+}
+.sunny {
+  height: 70px;
+}
