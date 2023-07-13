@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Лис Red",
+      "topic": "forest",
+      "price": 300,
+      "image": "../pic/shop/red.png"
+    },
+    {
+      "name": "Лис Gray",
+      "topic": "fox kids",
+      "price": 350,
+      "image": "../pic/shop/gray.png"
+    },
+    {
+      "name": "Лис Snowy",
+      "topic": "other",
+      "price": 400,
+      "image": "../pic/shop/snowy.png"
+    },
+    {
+      "name": "Лис Sandy",
+      "topic": "forest",
+      "price": 450,
+      "image": "../pic/shop/sandy.png"
+    },
+    {
+      "name": "Лис Arctic",
+      "topic": "other",
+      "price": 500,
+      "image": "../pic/shop/artic.png"
+    },
+    {
+      "name": "Лис Golden",
+      "topic": "fox kids",
+      "price": 550,
+      "image": "../pic/shop/golden.png"
+    },
+    {
+        "name": "Лис Summer",
+        "topic": "fox kids",
+        "price": 550,
+        "image": "../pic/shop/summer.png"
+      },
+      {
+        "name": "Лис Flower",
+        "topic": "fox kids",
+        "price": 550,
+        "image": "../pic/shop/flower.png"
+      }
+  ]
+  
